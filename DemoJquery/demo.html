@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<script>
+    $(document).ready(function(){
+
+        $("button").click(
+            function(){
+                $("#p1").hide();
+                $("tr:even").css({"background-color":"yellow","color":"red"})
+                $("tr:odd").css({"color":"green"})
+                $("[href]").css({"background-color":"orange"})
+            }
+        )
+    })
+</script>
+<body>
+    <p id="p1">This is a para</p>
+    <button>Click</button>
+
+    <table border="2">
+        <tr><td>101</td><td>Mobile Phone</td></tr>
+        <tr><td>102</td><td>Mobile Phone</td></tr>
+        <tr><td>103</td><td>Mobile Phone</td></tr>
+        <tr><td>104</td><td>Mobile Phone</td></tr>
+        <tr><td>105</td><td>Mobile Phone</td></tr>
+    </table>
+
+    <a href="https://selfcare.denbroadband.in/Customer/Default.aspx">Click here</a>
+</body>
+</html>
